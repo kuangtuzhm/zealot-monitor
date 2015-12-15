@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zealot.monitor</groupId>
+    <artifactId>zealot-monitor</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>zealot-monitor-servers</artifactId>
+  <packaging>war</packaging>
+  <name>zealot-monitor-servers</name>
+  
+  <properties>
+  	<zealot.version>1.0</zealot.version>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.appleframework.config</groupId>
+  		<artifactId>apple-config-diamond</artifactId>
+  		<version>1.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-core</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-model</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-orm-hibernate</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-validator</artifactId>
+		<version>5.0.1.Final</version>
+		
+	</dependency>
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-web</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-boot-jetty</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>com.zealot</groupId>
+  		<artifactId>zealot-distribute</artifactId>
+  		<version>${zealot.version}</version>
+  	</dependency>
+  	
+  	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjrt</artifactId>
+		<version>1.8.6</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjweaver</artifactId>
+		<version>1.8.6</version>
+	</dependency>
+  	
+  	<!-- 单点登录 -->
+  	<dependency>
+  		<groupId>org.jasig.cas.client</groupId>
+  		<artifactId>cas-client-core</artifactId>
+  		<version>3.4.1</version>
+  	</dependency>
+  	
+  </dependencies>
+  
+  <build/>
+</project>

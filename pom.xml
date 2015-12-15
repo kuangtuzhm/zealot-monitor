@@ -18,5 +18,6 @@
   </build>
   <modules>
   	<module>zealot-monitor-api</module>
+  	<module>zealot-monitor-servers</module>
   </modules>
 </project>
